@@ -5,9 +5,7 @@ public class Hello {
     public static void hello() {
         System.out.println("hello world!");
         Scanner sc = new Scanner(System.in);
-
-        var line = sc.nextLine();
-
-        System.out.printf("%s", line);
+//        var line = sc.nextLine();
+//        System.out.printf("%s", line);
     }
 }
