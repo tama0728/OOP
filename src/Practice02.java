@@ -25,7 +25,7 @@ public class Practice02 {
 
     public static void Array1() {
         double[] arr1 = {1.1, 2.3, 4.7, 7.5};
-        double[] arr2 = new double[4];
+        double arr2[] = new double[4];
 
         arr2[0] = 1.1;
         arr2[1] = 2.3;
