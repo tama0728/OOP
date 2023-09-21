@@ -1,11 +1,21 @@
 import java.util.Scanner;
 
-public class Hello {
-    //print hello world
-    public static void hello() {
-        System.out.println("hello world!");
-        Scanner sc = new Scanner(System.in);
-//        var line = sc.nextLine();
-//        System.out.printf("%s", line);
+class Hello {
+    String name = "kim";
+
+    void setName(String name){
+        this.name = name;
+    }
+    void sayHello(){
+        System.out.println("hi hello " + name);
+    }
+    void print() { this.sayHello(); }
+    public static void main(String[] args) {
+        Hello h = new Hello();
+        h.sayHello();
+        h.setName("kaa");
+        h.sayHello();
+        h.print();
     }
 }
+
