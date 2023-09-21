@@ -2,17 +2,18 @@ import java.util.Scanner;
 
 class Student {
     private String name, major;
-    private int id, tel;
+    private int id;
+    private long tel;
     void setId(int id){ this.id = id;}
     void setName(String name){ this.name = name;}
     void setMajor(String major){ this.major = major;}
-    void setTel(int tel){ this.tel = tel;}
+    void setTel(long tel){ this.tel = tel;}
 
     String getName(){ return name;}
     String getMajor(){ return major;}
     String getId(){ return Integer.toString(id);}
     String getTel() {
-        String temp = Integer.toString(tel);
+        String temp = Long.toString(tel);
         return '0' + temp.substring(0, 2) + '-' + temp.substring(2, 6) + '-' + temp.substring(6);
     }
 }
@@ -26,7 +27,7 @@ public class Homework2 {
             int id = sc.nextInt();
             String name = sc.next();
             String major = sc.next();
-            int tel = sc.nextInt();
+            long tel = sc.nextLong();
 
             students[i].setId(id);
             students[i].setName(name);
