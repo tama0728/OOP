@@ -1,8 +1,7 @@
 public class Practice11 {
     enum sign {
-        RED(30), GREEN(30), ORANGE(10);
+        RED(30), GREEN(30), AMBER(10);
         int sec;
-
         sign(int sec) {this.sec = sec;}
         int getSec() {return sec;}
     }
