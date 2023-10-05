@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 class Hello {
     String name = "kim";
 
