@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Homewwork3 {
+public class Homework3 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("몇 개의 수를 입력할 예정인가요? ");
