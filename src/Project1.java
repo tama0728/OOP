@@ -39,13 +39,19 @@ public class Project1 {
     }
 
     public void rerun() {
-        System.out.println("Re-running '" + history_buffer[historyIndex - 1]  + "'.");
+        if (historyIndex < 2) {
+            System.out.println("No previous command.");
+            return;
+        }
+        System.out.println("Re-running '" + history_buffer[historyIndex - 2]  + "'.");
     }
 
     public void input() {
         System.out.print("jshell> ");
         String input = sc.nextLine();
         System.out.println();
+        history_buffer[historyIndex] = input;
+        historyIndex++;
         if (input.equals("/help")) {
             help();
         } else if (input.equals("/list")) {
@@ -62,8 +68,6 @@ public class Project1 {
         } else {
             System.out.println("Running '" + input + "'.");
         }
-        history_buffer[historyIndex] = input;
-        historyIndex++;
         if (historyIndex == 10) {
             historyIndex = 0;
             System.out.println("The history buffer is cleared.");
