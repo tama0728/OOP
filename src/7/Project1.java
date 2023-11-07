@@ -19,8 +19,8 @@ public class Project1 {
     }
 
     public void list() {
-        int j = 1;
-        for (int i = 0; i < historyIndex; i++) {
+//        int j = 1;
+        for (int i = 0, j = 1; i < historyIndex; i++) {
             if (history_buffer[i].charAt(0) != '/') {
                 System.out.println(j++ + " : " + history_buffer[i]);
             }
