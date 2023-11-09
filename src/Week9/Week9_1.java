@@ -1,3 +1,5 @@
+package Week9;
+
 public class Week9_1 {
     public static void main(String[] args) {
         Lecturer lecturer = new Lecturer("김복동", "GB112", "bk32@ac.kr");
