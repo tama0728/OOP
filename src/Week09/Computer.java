@@ -1,4 +1,4 @@
-package Week9;
+package Week09;
 
 class Computer {
     private String cpu;

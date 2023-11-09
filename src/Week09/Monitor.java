@@ -1,4 +1,4 @@
-package Week9;
+package Week09;
 
 class Monitor {
     private String monitorSize;
