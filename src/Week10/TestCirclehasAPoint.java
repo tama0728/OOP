@@ -4,8 +4,8 @@ public class TestCirclehasAPoint {
     public static void main(String[] args) {
         CirclehasAPoint c = new CirclehasAPoint(25, 78, 5);
         System.out.println("원점: " + c.getCenter());
-        System.out.println("반지름: " + c.getRadius());
-        System.out.println("둘레: " + c.getCircumference());
-        System.out.println("넓이: " + c.getArea());
+        System.out.printf("반지름: %.2f\n", c.getRadius());
+        System.out.printf("둘레: %.2f\n", c.getCircumference());
+        System.out.printf("넓이: %.2f\n", c.getArea());
     }
 }
