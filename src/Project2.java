@@ -8,7 +8,7 @@ class Microwave {
     enum Cook {
         EGG(200, 700),
         Ramen(300, 1000),
-        Photato(600, 700);
+        Potato(600, 700);
         private int sec;
         private int watt;
         Cook(int sec, int watt) {
@@ -48,8 +48,8 @@ class Microwave {
                 this.watt = Cook.Ramen.getWatt();
                 break;
             case 3:
-                this.time = Cook.Photato.getSec();
-                this.watt = Cook.Photato.getWatt();
+                this.time = Cook.Potato.getSec();
+                this.watt = Cook.Potato.getWatt();
                 break;
             default:
                 break;
