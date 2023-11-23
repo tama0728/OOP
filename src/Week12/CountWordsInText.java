@@ -25,15 +25,18 @@ class CountWordsInText {
             for (String word : words) {
                 if (wordsMap.containsKey(word))
                     wordsMap.put(word, wordsMap.get(word) + 1);
-                else
+                else {
                     wordsMap.put(word, 1);
+                    wordsList.add(word);
+                }
             }
         }
     }    
     public void printWordsShownMoreThan(int n) {
-        for (Map.Entry<String, Integer> entry : wordsMap.entrySet()){
-            if (entry.getValue() >= n)
-                System.out.printf("%s : %d\n", entry.getKey(), entry.getValue());
+        wordsList.sort(String::compareTo);
+        for (String word : wordsList){
+            if (wordsMap.get(word) >= n)
+                System.out.printf("%s : %d\n", word, wordsMap.get(word));
         }
     }
     
