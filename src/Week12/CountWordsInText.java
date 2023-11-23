@@ -1,9 +1,6 @@
 package Week12;
 
-import java.util.Iterator;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.ArrayList;
+import java.util.*;
 import java.lang.*;
 
 
@@ -33,7 +30,8 @@ class CountWordsInText {
         }
     }    
     public void printWordsShownMoreThan(int n) {
-        wordsList.sort(String::compareTo);
+//        wordsList.sort(String::compareTo);
+//        Collections.sort(wordsList);
         for (String word : wordsList){
             if (wordsMap.get(word) >= n)
                 System.out.printf("%s : %d\n", word, wordsMap.get(word));

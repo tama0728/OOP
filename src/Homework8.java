@@ -20,13 +20,13 @@ class login {
     public boolean checkId() {
         System.out.println("id와 password를 입력해주세요.");
         System.out.print("id : ");
-        id = sc.nextLine();
+        id = sc.nextLine().trim();
         if (!user.containsKey(id)) {
             System.out.println("입력하신 id는 존재하지 않습니다. 다시 입력해주세요.\n");
             return false;
         }
         System.out.print("password : ");
-        pw = sc.nextLine();
+        pw = sc.nextLine().trim();
         if (!user.get(id).endsWith(pw)) {
             System.out.println("비밀번호가 일치하지 않습니다. 다시 입력해주세요.\n");
             return false;
